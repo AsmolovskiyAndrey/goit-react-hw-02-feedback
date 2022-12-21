@@ -2,4 +2,5 @@ button {
   background-color: rgba(127, 244, 255, 0.458);
   padding: 2px 5px;
   margin: 5px;
+  text-transform: capitalize;
 }

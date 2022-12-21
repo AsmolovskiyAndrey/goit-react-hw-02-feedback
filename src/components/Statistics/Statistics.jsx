@@ -1,13 +1,19 @@
 import './Statistics.css';
 import PropTypes from 'prop-types';
 
-export const Statistics = ({ good, neutral, bad, total, response }) => (
+export const Statistics = ({
+  good,
+  neutral,
+  bad,
+  total,
+  positivePercentage,
+}) => (
   <ul className="stat_box">
     <li>Good: {good}</li>
     <li>Neutral: {neutral}</li>
     <li>Bad: {bad}</li>
     <li>Total: {total}</li>
-    <li>Positive feedback: {response} %</li>
+    <li>Positive feedback: {positivePercentage} %</li>
   </ul>
 );
 
@@ -16,5 +22,5 @@ Statistics.propTypes = {
   neutral: PropTypes.number.isRequired,
   bad: PropTypes.number.isRequired,
   total: PropTypes.number.isRequired,
-  response: PropTypes.PropTypes.number.isRequired,
+  positivePercentage: PropTypes.PropTypes.number.isRequired,
 };
